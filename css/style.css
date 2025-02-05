@@ -1,0 +1,50 @@
+@import url(variables.css);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../storage/img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 45px;
+    padding-left: 75px;
+    padding-right: 75px;
+
+}
+/*
+.main-logo{
+}
+.main-logo img{
+}
+*/
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 54px;
+}
+.header-nav li{
+    list-style: none;
+}
+.header-nav li a{
+    font-family: "Poppins-SemiBold";
+    color: var(--color-1);
+    text-decoration: none;
+    font-size: 28px;
+    display: flex;
+}
+.header__nav li a img{
+
+}
+.menu-img{
+}
+.header__menu img{
+}
