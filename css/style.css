@@ -107,3 +107,69 @@ main{
 }
 
 /*============ Section One ============*/
+
+.reviews-dad{
+    display: flex;
+    flex-direction: column;
+    gap: 47px;
+}
+.div__reviews-container {
+    width: 345px;
+    height: 202px;
+    background: var(--color-1);
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--color-5);
+    position: sticky;
+    top: 0px;
+    padding-top: calc(var(--index) * var(--cardToppadding));
+    z-index: var(--index);
+}
+.div__reviews-cards {
+}
+.div__reviews-cards::after {    /*Grega la X y termina la tarjeta de review sin agregar nada en el html, se usa principalmente para iconos decorativos o retoques "pequeños"*/
+    content: "x";
+    cursor: pointer;
+    font-family: "Poppins-Medium";
+    color: var(--color-1);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background: var(--color-8);
+    border: 1px solid var(--color-6);
+    border-radius: 100%;
+    left: -18px;
+    top: -18px;
+}
+.div__reviews-profile {
+    gap: 16px;
+    display: flex;
+}
+.div__reviews-profile img {
+    object-fit: contain;
+}
+.div__reviews-cards p{
+    font-family: "Poppins-Medium";
+    text-align: justify;
+    margin-top: 12px;
+    font-size: 18px;
+    color: var(--color-7);
+    width: 277px;
+}
+.div__reviews-rating {
+}
+.div__reviews-rating h3{
+    color: var(--color-2);
+    font-family: "Poppins-Medium";
+    font-size: 28px;
+}
+.div__reviews-stars {
+}
+.div__reviews-stars img{
+    padding: 0;
+}
